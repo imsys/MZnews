@@ -1,0 +1,277 @@
+ -------------------------------------------------------------------
+|                        LOG DE MUDANÇAS DO                         |
+|-------------------------------------------------------------------|
+|                   __  __   ____           ___                     |
+|                  |  \/  | |_  /  _ _ ®   |_  )                    |
+|                  | |\/| |  / /  | ' \     / /                     |
+|                  |_|  |_| /___| |_||_|   /___|                    |
+|                                                                   |
+ -------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------
+|               11/06/2004 - Versão 2.0 Build #09 RC                |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Agora é possível definir uma data limite para que a notícia possa
+  ser comentada.
+
+[ Correções ]
+- O problema do IP bloqueado foi corrigido.
+- Quando a notícia for definida para ser exibida em uma data especí-
+  fica, os comentários funcionarão.
+- Quando há itens na fila e o usuário opta por não ver o alerta, o
+  sistema não exibirá o alerta.
+- Agora é possível fazer com que novos comentários sejam automatica-
+  mente colocados na fila.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  |-[.] i_categories.php
+   |  |-[.] i_config.php
+   |  |-[.] i_index.php
+   |  '-[.] i_news.php
+   |-[.] index.php
+   '-[.] mzn2.php
+
+
+ -------------------------------------------------------------------
+|               11/04/2004 - Versão 2.0 Build #08 RC                |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Agora é possível definir o alinhamento padrão das novas notícias em
+  cada categoria, impedindo que a formatação original do seu site se-
+  ja danificada.
+
+[ Correções ]
+- Quando não havia notícias, sempre era exibida a mensagem "Sua busca
+  não encontrou resultados". Agora esta mensagem só aparece se o usu-
+  ário realmente fizer uma busca.
+- Se, no modo Visual, fosse inserido algum mznCode, ele era processa-
+  do normalmente. Agora os colchetes permanecem.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  |-[.] g_mzn2.php
+   |  '-[.] i_edv.php
+   |-[.] index.php
+   |-[.] mzn2.php
+   |-[.] sys_install.php
+   '-[.] sys_upgrade.php
+
+
+ -------------------------------------------------------------------
+|               25/03/2004 - Versão 2.0 Build #07 RC                |
+ -------------------------------------------------------------------
+
+[ Correções ]
+- Uma duplicata no código da página index.php fazia com que a página
+  fosse gerada duas vezes, impedindo o acesso à determinadas áreas
+  do sistema.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  '-[.] i_smilies.php
+   '-[.] index.php
+
+
+ -------------------------------------------------------------------
+|               21/03/2004 - Versão 2.0 Build #06 RC                |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- O sistema foi elevado à Release Candidate por sua estabilidade.
+
+[ A pedidos ]
+- Para acabar com intrigas, trocamos a licença para a GNU-GPL.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  '-[.] g_html.php
+   |-[.] index.php
+   |-[.] licenca_GPL_oficial_en.txt
+   '-[.] licenca_GPL_pt-br.txt
+
+
+ -------------------------------------------------------------------
+|              15/02/2004 - Versão 2.0 Build #05 beta               |
+ -------------------------------------------------------------------
+
+[ ToDo ]
+- Estamos desenvolvendo um pequeno FAQ, com perguntas freqüentes, de-
+  vido à desativação do MZFórum em breve. O FAQ conterá mais informa-
+  ções sobre o 'mzn2.php' (o que pode ser útil para usuários experi-
+  entes), entre outras pequenas informações diversas.
+
+[ Novidades ]
+- Novo formato do arquivo de mudanças.
+- Alteramos drasticamente o modo de como as datas são inseridas. Ago-
+  ra é possível inserir campos do date do PHP, como {date:%d), meses
+  e dias da semana, em português.
+- Na instalação ou atualização, os modelos podem ser adaptados para a
+  estrutura clássica, que contém módulos semelhantes ao antigo MZn²
+  1.0.
+- Ao instalar ou atualizar do MZn² 1.0, há a opção de escolher que
+  tipo de estrutura de modelos você deseja utilizar (nova ou clássi-
+  ca).
+- Ao salvar um modelo, há a opção de editar um outro modelo imediata-
+  mente, ir para a lista de modelos, lista de categorias ou próximo
+  modelo (padrão).
+
+[ A pedidos ]
+- Criamos PHPs que imitam o modo do MZn² 1.0 de exibir notícias, co-
+  mentários e etc., e colocamos na pasta 'classic'.
+- Incluimos novamente os HTMLs predefinidos para serem usados com o
+  modo clássico.
+- Incluímos um formulário de busca no 'noticias.php'.
+- Agora quando não há resultados para uma busca é exibido o texto
+  "Sua busca não encontrou resultados".
+- A atualização do MZn² aproveita o campo personalizado "ICQ" (deve
+  estar como ICQ, em letras maiúsculas) e troca-o de campo personali-
+  zado para o campo "ICQ" que já acompanha o MZn².
+
+[ Problemas corrigidos ]
+- Ao editar um comentário, os campos personalizados ficavam inaces-
+  síveis.
+- No arquivo 'noticias.php', a ordem dos comentários estava como das
+  notícias (decrescente). Agora a ordem é crescente, como deveria.
+- Ao adicionar ou editar smilies quando não havia smiles na pasta,
+  era possível selecionar smiles locais. Agora, neste caso, a lista
+  fica desativada.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] classic
+   |  |-[.] comments.php
+   |  |-[.] headlines.php
+   |  |-[.] index.php
+   |  |-[.] news.php
+   |  |-[.] print.php
+   |  |-[.] sendmail.php
+   |  '-[.] view.php
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  |-[.] g_global.php
+   |  |-[.] i_categories.php
+   |  |-[.] i_comments.php
+   |  |-[.] i_generator.php
+   |  '-[.] i_smilies.php
+   |-[.] email.php
+   |-[.] imprimir.php
+   |-[.] index.php
+   |-[.] mzn2.php
+   |-[.] noticias.php
+   '-[.] sys_upgrade.php
+
+
+ -------------------------------------------------------------------
+|              20/01/2004 - Versão 2.0 Build #04 beta               |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Quando remover uma categoria que tem seus modelos usados por ou-
+  tras, seus modelos são copiados para as outras antes de removê-la,
+  impedindo que as categorias fiquem sem modelos.
+- A atualização agora também adapta os links de comentários, visuali-
+  zar notícia (e notícia completa) para ser usado com o arquivo
+  'noticias.php' e o 'Esquema 1'.
+
+[ Modificações ]
+- Adicionada mais uma condição ao 'noticias.php' e ao 'Esquema 1' do
+  Gerador PHP.
+
+[ Problemas corrigidos ]
+- Ao fazer uma atualização da versão 1.0, uma linha trocada fazia com
+  que o conteúdo de todos os comentários fossem perdidos.
+- Também na atualização, o campo de data do comentário não era troca-
+  do corretamente.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  |-[.] i_categories.php
+   |  '-[.] i_generator.php
+   |-[.] index.php
+   |-[.] mzn2.php
+   |-[.] noticias.php
+   '-[.] sys_upgrade.php
+
+
+ -------------------------------------------------------------------
+|              14/01/2004 - Versão 2.0 Build #03 beta               |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Ao atualizar o MZn² da versão 1.0, foi criada a opção de manter os
+  avatares dos usuários como um campo personalizado. Isto remove o
+  terceiro campo personalizado e, caso algum usuário não possua um
+  avatar, uma imagem inválida será exibida (em geral um [x]).
+- Novo set de smilies quando você faz uma nova instalação. Se o seu
+  servidor aceita conexões externas e está situado no Brasil, você
+  pode adicionar o pacote abaixo em Ferramentas > Smilies:
+  http://www.mznews.kit.net/smilies/pack2/
+
+[ Problemas corrigidos ]
+- Ao colocar o arquivo de notícias em outra página, o formulário de
+  adicionar comentários não exibe o campo de conteúdo.
+- O formulário de enviar a notícia por e-mail sempre retorna um erro
+  de ID inválido.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  |-[.] g_config.php
+   |  |-[.] g_mzn2.php
+   |  |-[.] i_comments.php
+   |  '-[.] i_news.php
+   |-[.] index.php
+   |-[.] mzn2.php
+   |-[.] sys_install.php
+   '-[.] sys_upgrade.php
+
+
+ -------------------------------------------------------------------
+|              11/01/2004 - Versão 2.0 Build #02 beta               |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Verificação de permissões dentro da instalação / upgrade
+
+[ Problemas corrigidos ]
+- Na atualização, as notícias não aparecem no site pois os modelos
+  não são recuperados. Se você teve esse problema, seus modelos foram
+  perdidos permanentemente.
+- Quando se instala o MZn² na raíz do seu site, algumas imagens podem
+  não aparecer corretamente.
+
+[ Árvore dos arquivos adicionados e alterados ]
+  [_] mznews
+   |-[_] inc
+   |  '-[.] g_config.php
+   |-[.] index.php
+   |-[.] sys_install.php
+   '-[.] sys_upgrade.php
+
+
+ -------------------------------------------------------------------
+|              10/01/2004 - Versão 2.0 Build #01 beta               |
+ -------------------------------------------------------------------
+
+[ Novidades ]
+- Lançado o MZn² 2.0 ADV!
+- Todas as mudanças podem ser encontradas na URL abaixo:
+  http://mzn.wstec.net/index.php/info
+
+
+ -------------------------------------------------------------------

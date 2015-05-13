@@ -1,0 +1,286 @@
+/****************************** Posicionamento & Layout *******************************/
+
+a {
+	color:#000000;
+	text-decoration:none;
+}
+a:hover {
+	color:#000000;
+	text-decoration:underline;
+}
+
+html {
+	scrollbar-arrow-color:#494653;
+	scrollbar-3dlight-color:#D3D2DB;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-face-color:#E2E2E7;
+	scrollbar-shadow-color:#E2E2E7;
+	scrollbar-darkshadow-color:#9E9DAC;
+	scrollbar-track-color:#EFEFEF;
+}
+body {
+	text-align:center;
+	margin:0px;
+	color:#000000;
+	background-color:#FFFFFF;
+	/*
+	O código abaixo conserta o problema do Netscape,
+	mas causa um outro problema: a exibição do fundo
+	depois do rodapé.
+	
+	background:url("mn_bg.jpg") #FFFFFF repeat-Y;
+	width:780px;
+	*/
+}
+body, table {
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+#container {
+	width:780px;
+	margin:0px auto;
+}
+
+#contents {
+	background:url("mn_bg.jpg") #FFFFFF repeat-Y;
+}
+
+#logo {
+	padding:15px 15px 41px 297px;
+	width:468px; height:60px;
+	background-image: url(logo.jpg);
+	background-repeat: no-repeat;
+	cursor:hand;
+}
+
+#menu {
+	background:url("mn_bg.jpg") #FFFFFF repeat-Y;
+	float:left;
+	width:123px; height:400px;
+	text-align:left;
+	font-size:8pt;
+	cursor: default;
+}
+
+#menu .menuFirst {
+	background-image: url(mn_top.jpg);
+	background-repeat: no-repeat;
+	width:123px; height:16px;
+	font-size:1px;
+}
+
+#menu div.menuUsr {
+	margin:0px; margin-bottom:12px;
+	background-image: url(mn_usr.jpg);
+	background-repeat: no-repeat;
+	width:80px; height:16px;
+	overflow:hidden;
+	padding:19px 10px 0px 33px;
+	color: #000000;
+	font-size:10px;
+	text-align:center;
+}
+
+#menu a.menuUsr {
+	color: #000000;
+	font-weight:bold;
+}
+
+#menu a.menuUsr:hover {
+	font-weight:normal;
+}
+
+#menu .menuMznTit {
+	margin:0px; margin-top:4px; margin-bottom:2px;
+	background-image: url(mn_mzn2_tit.jpg);
+	background-repeat: no-repeat;
+	width:123px; height:11px;
+	overflow:hidden;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size:10px;
+	text-align:left;
+}
+
+#menu .menuMznBox {
+	margin:0px 0px 12px 6px;
+	background-image: url(mn_mzn2_bg.jpg);
+	background-repeat: no-repeat;
+	width:109px; height:85px;
+	text-align:left;
+	border:1px solid #FFFFFF;
+}
+
+#menu div.menuCat {
+	margin:5px 10px 0px 9px;
+	width:90px; height:35px;
+	font-weight:bold;
+	text-align:left;
+}
+
+#menu select.menuCat {
+	width:90px; height:auto;
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:8pt;
+	font-weight:normal;
+	text-align:left;
+}
+
+#menu .menuAdmTit {
+	margin:0px; margin-top:4px; margin-bottom:2px;
+	background-image: url(mn_admin_tit.jpg);
+	background-repeat: no-repeat;
+	width:123px; height:11px;
+	overflow:hidden;
+	color: #FFFFFF;
+	text-align:left;
+	font-weight: bold;
+	font-size:10px;
+}
+
+#menu .menuAdmBox {
+	margin:0px 0px 12px 6px;
+	background-image: url(mn_admin_bg.jpg);
+	background-repeat: no-repeat;
+	width:109px; height:93px;
+	text-align:left;
+	border:1px solid #FFFFFF;
+}
+
+#menu .menuImg {
+}
+
+#menu .menuLogin {
+	margin:0px; margin-top:2px;
+	background-image: url(mn_login.jpg);
+	background-repeat: no-repeat;
+	width:123px; height:14px;
+}
+
+#menu .menuLogout {
+	margin:0px; margin-top:2px;
+	background-image: url(mn_logout.jpg);
+	background-repeat: no-repeat;
+	width:123px; height:14px;
+}
+
+#menu .menuLast {
+	display:none;
+}
+
+#title {
+	background-image: url(tit_.jpg);
+	background-repeat: no-repeat;
+	width:657px; height:37px;
+	float: right;
+	margin:0px;
+}
+
+#demo {
+	margin-bottom:10px;
+	font-weight: bold;
+	font-size:8pt;
+	text-align:right;
+	color: #CC0000;
+	cursor: default;
+}
+
+#msg {
+	margin-bottom:10px;
+	font-weight: bold;
+	color: #113F59;
+	cursor: default;
+}
+
+#site {
+	width: 657px;
+	float:right;
+/*	margin:52px 0px 0px 123px;*/
+	margin:15px 0px 0px 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#botTxt {
+	float:right;
+	margin-top:30px;
+	width:772px; height:auto;
+	padding:2px; padding-right:6px;
+	background-image:url(bot1.jpg);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	font-size:7pt;
+	text-align:right;
+	cursor:default;
+}
+
+#bot {
+	width:780px; height:35px;
+	float:right;
+	cursor:hand;
+	background-image: url(bot2.jpg);
+	background-repeat: no-repeat;
+}
+
+/******************************       Formatação       ********************************/
+.small {font-size:8pt; }
+
+button        {font-size:10pt; font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; width:100px; height:20px; cursor:hand; }
+button.submit {font-weight:bold; }
+
+select.date {font-size:10pt; font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; border:0px; color:#000000; background-color:#F2F1F3; }
+
+.small {font-size:8pt; font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; }
+
+.normal         {font-size:10pt; font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; }
+textarea.normal {overflow:auto; }
+input.warning   {font-size:10pt; font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; background-color:#FF8040; }
+
+
+.hint, .disabled {color:#808080; }
+.important {color:#CC0000; }
+.important a {color:#CC0000; }
+
+tr.listHeader {font-weight:bold; background-color:#444444; color:#FFFFFF; }
+a.listHeader, a.listHeader:hover, a.listHeaderSelected, a.listHeaderSelected:hover {color:#FFFFFF; }
+tr.listItem {}
+tr.listItemSelected {background-color:#EEEEEE; }
+tr.listItemDisabled, tr.listItemDisabled a, tr.listItemDisabled a:hover {color:#808080; }
+tr.listFooter {font-size:8pt; }
+tr.listFooter select {font-size:8pt; }
+tr.listFooter input {font-size:8pt; }
+tr.listFooter input.submit {font-size:8pt; font-weight:bold; width:30px; }
+
+td.listItem {font-size:8pt; }
+td.listItemSelected {font-size:8pt; background-color:#EEEEEE; }
+
+.formGroup  {background-color:#444444; color:#FFFFFF; padding:1px 3px 1px 3px; }
+.formItem   {font-size:8pt; }
+.formFooter {font-size:8pt; }
+
+.toolbar {padding-left:2px; background-color:#D5D8D6; text-align:left; width:503px; height:auto; }
+.toolNormal {background-color:none; width:23px; height:22px; }
+.toolSelected {background-color:#AEB3B0; width:23px; height:22px; }
+.toolLink {background-color:none; width:23px; height:22px; font-size:22px; }
+.toolLink:hover {background-color:#8F9693; width:23px; height:22px; font-size:22px; }
+.toolSep {margin-left:2px; margin-right:2px; }
+
+.edv {text-align:left; overflow:auto; width:483px; height:230px; padding:10px; border:1px solid #D5D8D6; border-top:0px; border-bottom:0px; }
+.edv a {color:blue; text-decoration:underline; }
+.edv img {border:0px; }
+.edvCode {text-align:left; overflow:auto; width:493px; height:238px; padding:5px; border:1px solid #D5D8D6; border-top:0px; border-bottom:0px; }
+
+.edvFooter {text-align:left; width:505px; border-top:1px solid #D5D8D6; }
+
+.edvTabSelected {background-color:#D5D8D6; padding:0px 10px 0px 10px; }
+.edvTab {padding:0px 10px 0px 10px; }
+
+   input.code,
+textarea.code {font-size:10pt; font-family:Courier new, Courier, mono; color:#000000; }
+textarea.code {overflow:auto; }
+
+a.tlbLnk:hover {background-color:#FFFFFF; }
+.tlbSep        {width:4px; height:22px; font:1px; background-color:#D6D5DB; }
+
+.tblSel {color:#000000; background:#ADABB6; }
